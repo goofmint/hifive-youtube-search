@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width">
+        <!-- 必要なライブラリを適時読み込んでください -->
+        <title>hifive YouTube検索サンプル</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//code.htmlhifive.com/h5.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <div class="navbar navbar-inverse">
+            <div class="container">
+                <p class="navbar-brand" >hifive YouTube検索サンプル</p>
+            </div>
+        </div>
+        <!-- container -->
+        <div id="container" class="container theme-showcase">
+            <!-- 検索窓 -->
+            <div class="page-title jumbotron">
+                <p>キーワードを入力し検索ボタンを押下すると、関連する動画を表示します。</p>
+                <form id="search" class="search-form corner-all search">
+                    <div class="search search-form-content">
+                        <input type="text" id="keyword" class="corner-all form-control search-keyword" placeholder="キーワード"/>
+                    </div>
+                    <div class="search-form-content">
+                        <input type="submit" class="corner-all btn btn-info" value="検索"/>
+                    </div>
+                </form>
+            </div>
+            <!-- 検索結果 -->
+            <div class="page-header">
+                <h3 class="result-message">検索結果: <span id="totalCount">0</span>件</h3>
+                <ul id="result" class="result-lists list-group"></ul>
+            </div>
+        </div>
+	<script src="//code.htmlhifive.com/ejs-h5mod.js"></script>
+	<script src="//code.htmlhifive.com/h5.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </body>
+</html>
